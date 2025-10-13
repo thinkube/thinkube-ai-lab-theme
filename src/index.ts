@@ -8,7 +8,7 @@ import { IThemeManager } from '@jupyterlab/apputils';
 /**
  * Initialization data for the thinkube-ai-lab-theme extension.
  */
-const plugin: JupyterFrontEndPlugin<void> = {
+const themePlugin: JupyterFrontEndPlugin<void> = {
   id: 'thinkube-ai-lab-theme:plugin',
   description: 'Thinkube AI Lab theme',
   autoStart: true,
@@ -28,4 +28,37 @@ const plugin: JupyterFrontEndPlugin<void> = {
   }
 };
 
-export default plugin;
+/**
+ * Custom splash screen with Thinkube logo
+ */
+const splashPlugin: JupyterFrontEndPlugin<void> = {
+  id: 'thinkube-ai-lab-theme:splash',
+  description: 'Thinkube AI Lab custom splash screen',
+  autoStart: true,
+  activate: (app: JupyterFrontEnd) => {
+    // Wait for splash screen to be added to DOM
+    const checkSplash = setInterval(() => {
+      const splash = document.getElementById('main-logo');
+      if (splash) {
+        // Clear the default SVG content
+        splash.innerHTML = '';
+        // Add our custom logo as background
+        splash.style.backgroundImage = "url('data:image/svg+xml;base64," + btoa(`
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+            <circle cx="100" cy="100" r="90" fill="#006680"/>
+            <text x="100" y="120" font-family="Poppins, sans-serif" font-size="80" font-weight="bold" fill="white" text-anchor="middle">tk</text>
+          </svg>
+        `) + "')";
+        splash.style.backgroundRepeat = 'no-repeat';
+        splash.style.backgroundSize = 'contain';
+        splash.style.backgroundPosition = 'center';
+        clearInterval(checkSplash);
+      }
+    }, 10);
+
+    // Clean up after 5 seconds if splash not found
+    setTimeout(() => clearInterval(checkSplash), 5000);
+  }
+};
+
+export default [themePlugin, splashPlugin];
