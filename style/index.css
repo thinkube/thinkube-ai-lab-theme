@@ -10,3 +10,27 @@ pre {
   font-size: var(--jp-code-font-size);
   line-height: var(--jp-code-line-height);
 }
+
+/* Replace JupyterLab logo with Thinkube AI Lab logo */
+#jp-MainLogo {
+  background-image: url(./tk_ai.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+#jp-MainLogo > svg {
+  visibility: hidden;
+}
+
+/* Also replace RetroLab logo if present */
+#jp-RetroLogo {
+  background-image: url(./tk_ai.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+#jp-RetroLogo > svg {
+  visibility: hidden;
+}
