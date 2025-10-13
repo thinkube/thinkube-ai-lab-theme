@@ -34,3 +34,17 @@ pre {
 #jp-RetroLogo > svg {
   visibility: hidden;
 }
+
+/* Replace splash screen animated logo */
+#main-logo svg {
+  display: none;
+}
+
+#main-logo {
+  background-image: url(./tk_ai.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 100px;
+  height: 100px;
+}
