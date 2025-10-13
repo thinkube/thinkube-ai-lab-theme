@@ -1,0 +1,14 @@
+# Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
+_commit: v4.4.0
+_src_path: https://github.com/jupyterlab/extension-template
+author_email: info@thinkube.com
+author_name: Alejandro Martínez Corriá and the Thinkube contributors
+has_binder: false
+has_settings: false
+kind: theme
+labextension_name: thinkube-ai-lab-theme
+project_short_description: Thinkube AI Lab theme
+python_name: thinkube_ai_lab_theme
+repository: https://github.com/thinkube/thinkube-ai-lab-theme
+test: true
+
