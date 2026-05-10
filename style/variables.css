@@ -96,10 +96,10 @@ all of MD as it is not optimized for dense, information rich UIs.
    */
 
   --jp-border-width: 1px;
-  --jp-border-color0: #b8d9e3; /* Teal-grey border */
-  --jp-border-color1: #c5e3eb; /* Light teal-grey border */
-  --jp-border-color2: #d9eef3; /* Lighter teal-grey border */
-  --jp-border-color3: #e8f4f7; /* Very light teal-grey border */
+  --jp-border-color0: #c1bdb7; /* Warm grey border */
+  --jp-border-color1: #d1cdc7; /* Light warm grey border */
+  --jp-border-color2: #dad7d0; /* Lighter warm grey border */
+  --jp-border-color3: #e8e4dd; /* Very light warm grey border */
   --jp-border-radius: 2px;
 
   /* UI Fonts
@@ -204,10 +204,10 @@ all of MD as it is not optimized for dense, information rich UIs.
    */
 
   --jp-layout-color0: white;
-  --jp-layout-color1: #fafcfd; /* Very subtle teal tint */
-  --jp-layout-color2: #e8f4f7; /* Light teal-grey */
-  --jp-layout-color3: #b8d9e3; /* Medium teal-grey */
-  --jp-layout-color4: #7ab8c9; /* Darker teal-grey */
+  --jp-layout-color1: #fdfaf3; /* Warm off-white (thinkube background) */
+  --jp-layout-color2: #e8e4dd; /* Warm grey (thinkube border) */
+  --jp-layout-color3: #c1bdb7; /* Medium warm grey */
+  --jp-layout-color4: #a09c96; /* Darker warm grey */
 
   /* Inverse Layout
    *
@@ -223,33 +223,33 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   /* Brand/accent - Thinkube colors */
 
-  --jp-brand-color0: #004d5c; /* Darker teal */
-  --jp-brand-color1: #006680; /* Thinkube primary teal */
-  --jp-brand-color2: #3399b3; /* Lighter teal */
-  --jp-brand-color3: #66ccdd; /* Even lighter teal */
-  --jp-accent-color0: #cc5428; /* Darker orange */
-  --jp-accent-color1: #ff6b35; /* Thinkube accent orange */
-  --jp-accent-color2: #ff8c5c; /* Lighter orange */
-  --jp-accent-color3: #ffb599; /* Even lighter orange */
+  --jp-brand-color0: #004251; /* Primary darkest (oklch 35% 0.12 220) */
+  --jp-brand-color1: #005063; /* Primary (oklch 40% 0.12 220) */
+  --jp-brand-color2: #006f87; /* Primary lighter (oklch 50% 0.10 220) */
+  --jp-brand-color3: #428ba1; /* Primary light (oklch 60% 0.08 220) */
+  --jp-accent-color0: #c85d00; /* Warning dark (oklch 60% 0.17 50) */
+  --jp-accent-color1: #f57400; /* Warning (oklch 70% 0.19 50) */
+  --jp-accent-color2: #fca676; /* Warning light (oklch 80% 0.12 50) */
+  --jp-accent-color3: #ffd4bc; /* Warning lightest (oklch 90% 0.06 50) */
 
   /* State colors (warn, error, success, info) - Thinkube palette */
 
-  --jp-warn-color0: #cc6e35; /* Darker warning */
-  --jp-warn-color1: #ff8c42; /* Thinkube warning orange */
-  --jp-warn-color2: #ffaa6e; /* Lighter warning */
-  --jp-warn-color3: #ffd4b3; /* Even lighter warning */
-  --jp-error-color0: #b83e30; /* Darker error */
-  --jp-error-color1: #e74c3c; /* Thinkube error red */
-  --jp-error-color2: #ef7d6f; /* Lighter error */
-  --jp-error-color3: #f7b5ab; /* Even lighter error */
-  --jp-success-color0: #009e78; /* Darker success */
-  --jp-success-color1: #00c896; /* Thinkube success green */
-  --jp-success-color2: #4dddaf; /* Lighter success */
-  --jp-success-color3: #99efd0; /* Even lighter success */
-  --jp-info-color0: #2a7db0; /* Darker info */
-  --jp-info-color1: #3498db; /* Thinkube info blue */
-  --jp-info-color2: #6cb3e6; /* Lighter info */
-  --jp-info-color3: #aed9f2; /* Even lighter info */
+  --jp-warn-color0: #c85d00; /* Warning dark (oklch 60% 0.17 50) */
+  --jp-warn-color1: #f57400; /* Warning (oklch 70% 0.19 50) */
+  --jp-warn-color2: #fca676; /* Warning light (oklch 80% 0.12 50) */
+  --jp-warn-color3: #ffd4bc; /* Warning lightest (oklch 90% 0.06 50) */
+  --jp-error-color0: #b20011; /* Destructive dark (oklch 48% 0.20 27) */
+  --jp-error-color1: #d40c1a; /* Destructive (oklch 55% 0.22 27) */
+  --jp-error-color2: #e06257; /* Destructive light (oklch 65% 0.16 27) */
+  --jp-error-color3: #edaaa2; /* Destructive lightest (oklch 80% 0.08 27) */
+  --jp-success-color0: #00703e; /* Success dark (oklch 48% 0.14 155) */
+  --jp-success-color1: #00884d; /* Success (oklch 55% 0.16 155) */
+  --jp-success-color2: #49a46e; /* Success light (oklch 65% 0.12 155) */
+  --jp-success-color3: #a0caad; /* Success lightest (oklch 80% 0.06 155) */
+  --jp-info-color0: #1156c1; /* Info dark (oklch 48% 0.18 260) */
+  --jp-info-color1: #1c69e3; /* Info (oklch 55% 0.20 260) */
+  --jp-info-color2: #5a8ee4; /* Info light (oklch 65% 0.14 260) */
+  --jp-info-color3: #a0bff2; /* Info lightest (oklch 80% 0.08 260) */
 
   /* Cell specific styles */
 
@@ -257,9 +257,9 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-cell-collapser-width: 8px;
   --jp-cell-collapser-min-height: 20px;
   --jp-cell-collapser-not-active-hover-opacity: 0.6;
-  --jp-cell-editor-background: #f0f8fa; /* Light teal-tinted background */
-  --jp-cell-editor-border-color: #d9eef3; /* Light teal-grey border */
-  --jp-cell-editor-box-shadow: inset 0 0 2px #99ddee; /* Light teal */
+  --jp-cell-editor-background: #faf5ea; /* Warm tinted background */
+  --jp-cell-editor-border-color: #dad7d0; /* Warm grey border */
+  --jp-cell-editor-box-shadow: inset 0 0 2px #71bad1; /* Primary tint */
   --jp-cell-editor-active-background: var(--jp-layout-color0);
   --jp-cell-editor-active-border-color: var(--jp-brand-color1);
   --jp-cell-prompt-width: 64px;
@@ -281,7 +281,7 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   --jp-notebook-padding: 10px;
   --jp-notebook-select-background: var(--jp-layout-color1);
-  --jp-notebook-multiselected-color: #e6f7fa; /* Very light pale teal */
+  --jp-notebook-multiselected-color: #def7ff; /* Very light primary tint */
 
   /* The scroll padding is calculated to fill enough space at the bottom of the
   notebook to show one single-line cell (with appropriate padding) at the top
@@ -297,8 +297,8 @@ all of MD as it is not optimized for dense, information rich UIs.
   /* Rendermime styles */
 
   --jp-rendermime-error-background: #fdd;
-  --jp-rendermime-table-row-background: #f0f8fa; /* Light teal-tinted background */
-  --jp-rendermime-table-row-hover-background: #e6f7fa; /* Light pale teal */
+  --jp-rendermime-table-row-background: #f8f5ee; /* Warm tinted background */
+  --jp-rendermime-table-row-hover-background: #e1f2f8; /* Light primary tint */
 
   /* Dialog specific styles */
 
@@ -315,7 +315,7 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-toolbar-background: var(--jp-layout-color1);
   --jp-toolbar-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.24);
   --jp-toolbar-header-margin: 4px 4px 0 4px;
-  --jp-toolbar-active-background: #d9eef3; /* Light teal-grey */
+  --jp-toolbar-active-background: #daebf1; /* Light primary tint */
 
   /* Statusbar specific styles */
 
@@ -323,17 +323,17 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   /* Input field styles */
 
-  --jp-input-box-shadow: inset 0 0 2px #99ddee; /* Light teal */
+  --jp-input-box-shadow: inset 0 0 2px #71bad1; /* Primary tint */
   --jp-input-active-background: var(--jp-layout-color1);
   --jp-input-hover-background: var(--jp-layout-color1);
-  --jp-input-background: #f0f8fa; /* Light teal-tinted background */
+  --jp-input-background: #faf5ea; /* Warm tinted background */
   --jp-input-border-color: var(--jp-border-color1);
   --jp-input-active-border-color: var(--jp-brand-color1);
 
   /* General editor styles */
 
-  --jp-editor-selected-background: #d9eef3; /* Light teal-grey selection */
-  --jp-editor-selected-focused-background: #c5e3eb; /* Teal-grey focused selection */
+  --jp-editor-selected-background: #d9f4fd; /* Light primary selection */
+  --jp-editor-selected-focused-background: #daebf1; /* Primary focused selection */
   --jp-editor-cursor-color: var(--jp-ui-font-color0);
 
   /* Code mirror specific styles */
