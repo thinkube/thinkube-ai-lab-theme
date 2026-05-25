@@ -173,6 +173,9 @@
             }
         ]
     },
+    "resolutions": {
+        "webpack": "~5.106.0"
+    },
     "stylelint": {
         "extends": [
             "stylelint-config-recommended",
