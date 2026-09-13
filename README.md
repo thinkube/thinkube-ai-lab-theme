@@ -2,7 +2,7 @@
 
 [![Github Actions Status](https://github.com/thinkube/thinkube-ai-lab-theme/workflows/Build/badge.svg)](https://github.com/thinkube/thinkube-ai-lab-theme/actions/workflows/build.yml)
 
-Thinkube AI Lab theme
+Thinkube Notebooks theme
 
 ## Requirements
 

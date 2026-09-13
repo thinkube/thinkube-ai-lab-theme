@@ -10,7 +10,7 @@ import { IThemeManager } from '@jupyterlab/apputils';
  */
 const themePlugin: JupyterFrontEndPlugin<void> = {
   id: 'thinkube-ai-lab-theme:plugin',
-  description: 'Thinkube AI Lab theme',
+  description: 'Thinkube Notebooks theme',
   autoStart: true,
   requires: [IThemeManager],
   activate: (app: JupyterFrontEnd, manager: IThemeManager) => {
@@ -19,7 +19,7 @@ const themePlugin: JupyterFrontEndPlugin<void> = {
 
     manager.register({
       name: 'thinkube-ai-lab-theme',
-      displayName: 'Thinkube AI Lab',
+      displayName: 'Thinkube Notebooks',
       isLight: true,
       themeScrollbars: true,
       load: () => manager.loadCSS(style),
@@ -33,7 +33,7 @@ const themePlugin: JupyterFrontEndPlugin<void> = {
  */
 const splashPlugin: JupyterFrontEndPlugin<void> = {
   id: 'thinkube-ai-lab-theme:splash',
-  description: 'Thinkube AI Lab custom splash screen',
+  description: 'Thinkube Notebooks splash screen',
   autoStart: true,
   activate: (app: JupyterFrontEnd) => {
     // Wait for splash screen to be added to DOM
