@@ -1,5 +1,5 @@
 {
-  "name": "thinkube-ai-lab-theme",
+  "name": "thinkube-notebooks-theme",
   "version": "0.1.0",
   "description": "Thinkube Notebooks theme for JupyterLab",
   "keywords": [
@@ -7,9 +7,9 @@
     "jupyterlab",
     "jupyterlab-extension"
   ],
-  "homepage": "https://github.com/thinkube/thinkube-ai-lab-theme",
+  "homepage": "https://github.com/thinkube/thinkube-notebooks-theme",
   "bugs": {
-    "url": "https://github.com/thinkube/thinkube-ai-lab-theme/issues"
+    "url": "https://github.com/thinkube/thinkube-notebooks-theme/issues"
   },
   "license": "BSD-3-Clause",
   "author": {
@@ -25,7 +25,7 @@
   "types": "lib/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/thinkube/thinkube-ai-lab-theme.git"
+    "url": "https://github.com/thinkube/thinkube-notebooks-theme.git"
   },
   "scripts": {
     "build": "jlpm build:lib && jlpm build:labextension:dev",
@@ -37,7 +37,7 @@
     "clean": "jlpm clean:lib",
     "clean:lib": "rimraf lib tsconfig.tsbuildinfo",
     "clean:lintcache": "rimraf .eslintcache .stylelintcache",
-    "clean:labextension": "rimraf thinkube_ai_lab_theme/labextension thinkube_ai_lab_theme/_version.py",
+    "clean:labextension": "rimraf thinkube_notebooks_theme/labextension thinkube_notebooks_theme/_version.py",
     "clean:all": "jlpm clean:lib && jlpm clean:labextension && jlpm clean:lintcache",
     "eslint": "jlpm eslint:check --fix",
     "eslint:check": "eslint . --cache --ext .ts,.tsx",
@@ -93,7 +93,7 @@
   },
   "jupyterlab": {
     "extension": true,
-    "outputDir": "thinkube_ai_lab_theme/labextension",
+    "outputDir": "thinkube_notebooks_theme/labextension",
     "themePath": "style/index.css"
   },
   "eslintIgnore": [

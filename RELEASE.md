@@ -1,4 +1,4 @@
-# Making a new release of thinkube_ai_lab_theme
+# Making a new release of thinkube_notebooks_theme
 
 The extension can be published to `PyPI` and `npm` manually or using the [Jupyter Releaser](https://github.com/jupyter-server/jupyter_releaser).
 

@@ -6,19 +6,19 @@ import {
 import { IThemeManager } from '@jupyterlab/apputils';
 
 /**
- * Initialization data for the thinkube-ai-lab-theme extension.
+ * Initialization data for the thinkube-notebooks-theme extension.
  */
 const themePlugin: JupyterFrontEndPlugin<void> = {
-  id: 'thinkube-ai-lab-theme:plugin',
+  id: 'thinkube-notebooks-theme:plugin',
   description: 'Thinkube Notebooks theme',
   autoStart: true,
   requires: [IThemeManager],
   activate: (app: JupyterFrontEnd, manager: IThemeManager) => {
-    console.log('JupyterLab extension thinkube-ai-lab-theme is activated!');
-    const style = 'thinkube-ai-lab-theme/index.css';
+    console.log('JupyterLab extension thinkube-notebooks-theme is activated!');
+    const style = 'thinkube-notebooks-theme/index.css';
 
     manager.register({
-      name: 'thinkube-ai-lab-theme',
+      name: 'thinkube-notebooks-theme',
       displayName: 'Thinkube Notebooks',
       isLight: true,
       themeScrollbars: true,
@@ -32,7 +32,7 @@ const themePlugin: JupyterFrontEndPlugin<void> = {
  * Custom splash screen with Thinkube logo
  */
 const splashPlugin: JupyterFrontEndPlugin<void> = {
-  id: 'thinkube-ai-lab-theme:splash',
+  id: 'thinkube-notebooks-theme:splash',
   description: 'Thinkube Notebooks splash screen',
   autoStart: true,
   activate: (app: JupyterFrontEnd) => {

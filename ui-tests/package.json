@@ -1,7 +1,7 @@
 {
-  "name": "thinkube-ai-lab-theme-ui-tests",
+  "name": "thinkube-notebooks-theme-ui-tests",
   "version": "1.0.0",
-  "description": "JupyterLab thinkube-ai-lab-theme Integration Tests",
+  "description": "JupyterLab thinkube-notebooks-theme Integration Tests",
   "private": true,
   "scripts": {
     "start": "jupyter lab --config jupyter_server_test_config.py",

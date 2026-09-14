@@ -6,9 +6,9 @@ author_name: Alejandro Martínez Corriá and the Thinkube contributors
 has_binder: false
 has_settings: false
 kind: theme
-labextension_name: thinkube-ai-lab-theme
-project_short_description: Thinkube AI Lab theme
-python_name: thinkube_ai_lab_theme
-repository: https://github.com/thinkube/thinkube-ai-lab-theme
+labextension_name: thinkube-notebooks-theme
+project_short_description: Thinkube Notebooks theme
+python_name: thinkube_notebooks_theme
+repository: https://github.com/thinkube/thinkube-notebooks-theme
 test: true
 

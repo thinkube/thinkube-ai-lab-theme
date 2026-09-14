@@ -14,7 +14,7 @@ pre {
   line-height: var(--jp-code-line-height);
 }
 
-/* Replace JupyterLab logo with Thinkube AI Lab logo */
+/* Replace JupyterLab logo with Thinkube Notebooks logo */
 #jp-MainLogo {
   background-image: url(./tk_ai.svg);
   background-repeat: no-repeat;

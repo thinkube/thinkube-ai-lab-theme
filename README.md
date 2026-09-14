@@ -1,6 +1,6 @@
-# thinkube_ai_lab_theme
+# thinkube_notebooks_theme
 
-[![Github Actions Status](https://github.com/thinkube/thinkube-ai-lab-theme/workflows/Build/badge.svg)](https://github.com/thinkube/thinkube-ai-lab-theme/actions/workflows/build.yml)
+[![Github Actions Status](https://github.com/thinkube/thinkube-notebooks-theme/workflows/Build/badge.svg)](https://github.com/thinkube/thinkube-notebooks-theme/actions/workflows/build.yml)
 
 Thinkube Notebooks theme
 
@@ -13,7 +13,7 @@ Thinkube Notebooks theme
 To install the extension, execute:
 
 ```bash
-pip install thinkube_ai_lab_theme
+pip install thinkube_notebooks_theme
 ```
 
 ## Uninstall
@@ -21,7 +21,7 @@ pip install thinkube_ai_lab_theme
 To remove the extension, execute:
 
 ```bash
-pip uninstall thinkube_ai_lab_theme
+pip uninstall thinkube_notebooks_theme
 ```
 
 ## Contributing
@@ -36,7 +36,7 @@ The `jlpm` command is JupyterLab's pinned version of
 
 ```bash
 # Clone the repo to your local environment
-# Change directory to the thinkube_ai_lab_theme directory
+# Change directory to the thinkube_notebooks_theme directory
 # Install package in development mode
 pip install -e "."
 # Link your development version of the extension with JupyterLab
@@ -65,12 +65,12 @@ jupyter lab build --minimize=False
 ### Development uninstall
 
 ```bash
-pip uninstall thinkube_ai_lab_theme
+pip uninstall thinkube_notebooks_theme
 ```
 
 In development mode, you will also need to remove the symlink created by `jupyter labextension develop`
 command. To find its location, you can run `jupyter labextension list` to figure out where the `labextensions`
-folder is located. Then you can remove the symlink named `thinkube-ai-lab-theme` within that folder.
+folder is located. Then you can remove the symlink named `thinkube-notebooks-theme` within that folder.
 
 ### Testing the extension
 
