@@ -230,25 +230,54 @@ body[data-jp-theme-name='thinkube-notebooks-dark'] #jp-main-statusbar {
 }
 
 /*
- * Selected rows use the light brand cyan as background, so their icons need
- * dark strokes and fills instead of JupyterLab's fixed white.
+ * Selected and active rows. The IDE draws them as a translucent white layer
+ * (list.activeSelectionBackground #ffffff60) with white text. JupyterLab uses
+ * the primary color there, which is the light cyan in this theme and would
+ * need dark text.
  */
 body[data-jp-theme-name='thinkube-notebooks-dark']
-  .jp-DirListing-item.jp-mod-selected
-  .jp-icon-selectable[fill],
+  .jp-DirListing-item.jp-mod-selected,
 body[data-jp-theme-name='thinkube-notebooks-dark']
-  #jp-main-statusbar
-  .jp-mod-selected
-  .jp-icon-selectable[fill] {
-  fill: #001e26;
+  .lm-CommandPalette-item.lm-mod-active,
+body[data-jp-theme-name='thinkube-notebooks-dark']
+  .lm-CommandPalette-item.lm-mod-active:hover:not(.lm-mod-disabled),
+body[data-jp-theme-name='thinkube-notebooks-dark']
+  .jp-Completer-item.jp-mod-active,
+body[data-jp-theme-name='thinkube-notebooks-dark'] .jp-mod-clicked {
+  background: rgba(255, 255, 255, 0.376);
+  color: #fff;
+}
+
+body[data-jp-theme-name='thinkube-notebooks-dark'] .jp-mod-clicked:hover {
+  background: rgba(255, 255, 255, 0.45);
 }
 
 body[data-jp-theme-name='thinkube-notebooks-dark']
-  .jp-DirListing-item.jp-mod-selected
-  .jp-icon-selectable[stroke],
+  .jp-mod-clicked
+  .jp-StatusBar-TextItem,
 body[data-jp-theme-name='thinkube-notebooks-dark']
-  #jp-main-statusbar
-  .jp-mod-selected
+  .jp-DirListing-content
+  .jp-DirListing-item.jp-mod-selected
+  mark,
+body[data-jp-theme-name='thinkube-notebooks-dark']
+  .lm-CommandPalette-item.lm-mod-active
+  .lm-CommandPalette-itemLabel
+  > mark,
+body[data-jp-theme-name='thinkube-notebooks-dark']
+  .jp-DirListing-item.jp-mod-running.jp-mod-selected
+  .jp-DirListing-itemIcon::before {
+  color: #fff;
+}
+
+/* JupyterLab draws active command palette icons in the layout color */
+body[data-jp-theme-name='thinkube-notebooks-dark']
+  .lm-CommandPalette-item.lm-mod-active
+  .jp-icon-selectable[fill] {
+  fill: #fff;
+}
+
+body[data-jp-theme-name='thinkube-notebooks-dark']
+  .lm-CommandPalette-item.lm-mod-active
   .jp-icon-selectable[stroke] {
-  stroke: #001e26;
+  stroke: #fff;
 }
