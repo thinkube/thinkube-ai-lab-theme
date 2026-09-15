@@ -16,7 +16,7 @@ pre {
 
 /* Replace JupyterLab logo with Thinkube Notebooks logo */
 #jp-MainLogo {
-  background-image: url(./tk_ai.svg);
+  background-image: url('./tk_ai.svg');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -28,7 +28,7 @@ pre {
 
 /* Also replace RetroLab logo if present */
 #jp-RetroLogo {
-  background-image: url(./tk_ai.svg);
+  background-image: url('./tk_ai.svg');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -44,7 +44,7 @@ pre {
 }
 
 #main-logo {
-  background-image: url(./tk_ai.svg);
+  background-image: url('./tk_ai.svg');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;

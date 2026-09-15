@@ -45,12 +45,15 @@ const splashPlugin: JupyterFrontEndPlugin<void> = {
         // Clear the default SVG content
         splash.innerHTML = '';
         // Add our custom logo as background
-        splash.style.backgroundImage = "url('data:image/svg+xml;base64," + btoa(`
+        splash.style.backgroundImage =
+          "url('data:image/svg+xml;base64," +
+          btoa(`
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
             <circle cx="100" cy="100" r="90" fill="#006680"/>
             <text x="100" y="120" font-family="Poppins, sans-serif" font-size="80" font-weight="bold" fill="white" text-anchor="middle">tk</text>
           </svg>
-        `) + "')";
+        `) +
+          "')";
         splash.style.backgroundRepeat = 'no-repeat';
         splash.style.backgroundSize = 'contain';
         splash.style.backgroundPosition = 'center';
