@@ -4,6 +4,21 @@
 
 Thinkube Notebooks theme
 
+## Icons
+
+The extension replaces JupyterLab's single-color UI icons (toolbars, menus,
+sidebars, status bar) with [Lucide](https://lucide.dev) icons. File-type icons,
+language logos, kernel status circles, breakpoints and the tab close button
+keep their JupyterLab look, because their color or shape carries meaning.
+
+- The mapping is in `src/lucide-icons.ts`.
+- The icons work with any color theme, not only Thinkube Notebooks.
+- To turn them off, open Settings > Thinkube Icons and clear
+  "Use Lucide icons", then reload the page.
+
+The Lucide icons are under the ISC license. See
+[THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md).
+
 ## Requirements
 
 - JupyterLab >= 4.0.0

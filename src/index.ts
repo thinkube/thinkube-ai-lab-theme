@@ -5,6 +5,8 @@ import {
 
 import { IThemeManager } from '@jupyterlab/apputils';
 
+import { iconsPlugin } from './icons';
+
 /**
  * Initialization data for the thinkube-notebooks-theme extension.
  */
@@ -61,4 +63,4 @@ const splashPlugin: JupyterFrontEndPlugin<void> = {
   }
 };
 
-export default [themePlugin, splashPlugin];
+export default [themePlugin, splashPlugin, iconsPlugin];

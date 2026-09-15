@@ -1,6 +1,6 @@
 {
   "name": "thinkube-notebooks-theme",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Thinkube Notebooks theme for JupyterLab",
   "keywords": [
     "jupyter",
@@ -19,7 +19,8 @@
   "files": [
     "lib/**/*.{d.ts,eot,gif,html,jpg,js,js.map,json,png,svg,woff2,ttf}",
     "style/**/*.{css,js,eot,gif,html,jpg,json,png,svg,woff2,ttf}",
-    "src/**/*.{ts,tsx}"
+    "src/**/*.{ts,tsx}",
+    "schema/*.json"
   ],
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -56,7 +57,10 @@
   },
   "dependencies": {
     "@jupyterlab/application": "^4.0.0",
-    "@jupyterlab/apputils": "^4.0.0"
+    "@jupyterlab/apputils": "^4.0.0",
+    "@jupyterlab/settingregistry": "^4.0.0",
+    "@jupyterlab/ui-components": "^4.0.0",
+    "lucide-static": "1.26.0"
   },
   "devDependencies": {
     "@jupyterlab/builder": "^4.0.0",
@@ -94,7 +98,8 @@
   "jupyterlab": {
     "extension": true,
     "outputDir": "thinkube_notebooks_theme/labextension",
-    "themePath": "style/index.css"
+    "themePath": "style/index.css",
+    "schemaDir": "schema"
   },
   "eslintIgnore": [
     "node_modules",

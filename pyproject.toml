@@ -40,6 +40,7 @@ exclude = [".github", "binder"]
 [tool.hatch.build.targets.wheel.shared-data]
 "thinkube_notebooks_theme/labextension" = "share/jupyter/labextensions/thinkube-notebooks-theme"
 "install.json" = "share/jupyter/labextensions/thinkube-notebooks-theme/install.json"
+"THIRD-PARTY-NOTICES.md" = "share/jupyter/labextensions/thinkube-notebooks-theme/THIRD-PARTY-NOTICES.md"
 
 [tool.hatch.build.hooks.version]
 path = "thinkube_notebooks_theme/_version.py"
