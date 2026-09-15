@@ -2,6 +2,16 @@
 
 <!-- <START NEW CHANGELOG ENTRY> -->
 
+## 0.3.0
+
+- New theme: Thinkube Notebooks Dark. Its surfaces, text and syntax colors
+  follow the Thinkube Dark theme of the IDE.
+- Orange (#FF6B35, the Thinkube shell prompt color) is the secondary color
+  in both themes: the active document tab, the active side bar tab, the
+  notification count, switches and the output prompt.
+- Warnings use amber instead of orange, so they do not read as the brand
+  color.
+
 ## 0.2.1
 
 - Side bar tab icons use thicker lines (about 2px), matching the VS Code

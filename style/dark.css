@@ -1,0 +1,254 @@
+/*
+ * Thinkube Notebooks Dark.
+ *
+ * Both Thinkube themes load the same stylesheet. JupyterLab stamps the selected
+ * theme name on <body>, so these values replace the light values from
+ * variables.css only while the dark theme is selected.
+ *
+ * Surfaces and syntax colors follow the Thinkube Dark theme of the IDE
+ * (thinkube-theme/themes/thinkube-dark.json). Every color variable of
+ * JupyterLab's own dark theme is set here, so no light color is left behind.
+ */
+
+body[data-jp-theme-name='thinkube-notebooks-dark'] {
+  color-scheme: dark;
+
+  /* Shadows: black on dark surfaces */
+  --jp-shadow-base-lightness: 0;
+  --jp-shadow-umbra-color: rgba(0, 0, 0, 0.4);
+  --jp-shadow-penumbra-color: rgba(0, 0, 0, 0.28);
+  --jp-shadow-ambient-color: rgba(0, 0, 0, 0.24);
+
+  /* Borders */
+  --jp-border-color0: #40647d;
+  --jp-border-color1: #40647d;
+  --jp-border-color2: #2f5566;
+  --jp-border-color3: #1e4150;
+  --jp-inverse-border-color: #7fa3b5;
+
+  /* Text on layout colors */
+  --jp-ui-font-color0: #fff;
+  --jp-ui-font-color1: rgba(255, 255, 255, 0.87);
+  --jp-ui-font-color2: rgba(255, 255, 255, 0.62);
+  --jp-ui-font-color3: rgba(255, 255, 255, 0.42);
+
+  /* Text on brand, accent and state colors (all light in this theme) */
+  --jp-ui-inverse-font-color0: #001e26;
+  --jp-ui-inverse-font-color1: rgba(0, 30, 38, 0.92);
+  --jp-ui-inverse-font-color2: rgba(0, 30, 38, 0.62);
+  --jp-ui-inverse-font-color3: rgba(0, 30, 38, 0.42);
+  --jp-content-font-color0: #fff;
+  --jp-content-font-color1: #fff;
+  --jp-content-font-color2: rgba(255, 255, 255, 0.7);
+  --jp-content-font-color3: rgba(255, 255, 255, 0.5);
+  --jp-content-link-color: #80e6ff;
+  --jp-content-link-visited-color: #ebbbff;
+  --jp-content-link-hover-color: #bbf2ff;
+
+  /*
+   * Layout, matching the IDE: editor #004051, side bar #003240,
+   * activity bar #002933, title and status bar #001e26.
+   */
+  --jp-layout-color0: #004051;
+  --jp-layout-color1: #003240;
+  --jp-layout-color2: #002933;
+  --jp-layout-color3: #005a6e;
+  --jp-layout-color4: #40647d;
+  --jp-inverse-layout-color0: #fff;
+  --jp-inverse-layout-color1: #f5fbfd;
+  --jp-inverse-layout-color2: #d9eef3;
+  --jp-inverse-layout-color3: #a9c3cc;
+  --jp-inverse-layout-color4: #7fa3b5;
+
+  /* Primary: the IDE highlight cyan */
+  --jp-brand-color0: #99e9ff;
+  --jp-brand-color1: #bbf2ff;
+  --jp-brand-color2: #0e959c;
+  --jp-brand-color3: #00718e;
+  --jp-brand-color4: #005a6e;
+
+  /* Secondary: starship orange */
+  --jp-accent-color0: #ff6b35;
+  --jp-accent-color1: #ff8b5c;
+  --jp-accent-color2: #ffb088;
+  --jp-accent-color3: #5a3226;
+
+  /* State colors. Warnings are amber so they differ from the brand orange. */
+  --jp-warn-color0: #fbbf24;
+  --jp-warn-color1: #f59e0b;
+  --jp-warn-color2: #fde68a;
+  --jp-warn-color3: #4d3d14;
+  --jp-error-color0: #ff5c69;
+  --jp-error-color1: #ff7882;
+  --jp-error-color2: #ff9da4;
+  --jp-error-color3: #5c1f2a;
+  --jp-success-color0: #00c896;
+  --jp-success-color1: #5ee6b8;
+  --jp-success-color2: #b8f171;
+  --jp-success-color3: #0f4a3a;
+  --jp-info-color0: #67c2e6;
+  --jp-info-color1: #80e6ff;
+  --jp-info-color2: #bbf2ff;
+  --jp-info-color3: #0b4a5e;
+  --jp-shortcuts-button-background: var(--jp-brand-color2);
+  --jp-shortcuts-button-hover-background: var(--jp-brand-color3);
+
+  /* Cells */
+  --jp-cell-editor-background: #003240;
+  --jp-cell-editor-border-color: #40647d;
+  --jp-cell-editor-box-shadow: inset 0 0 2px #80e6ff;
+  --jp-cell-editor-active-background: #003240;
+  --jp-cell-editor-active-border-color: var(--jp-brand-color1);
+  --jp-cell-prompt-not-active-font-color: #a9c3cc;
+  --jp-cell-inprompt-font-color: #80e6ff;
+  --jp-cell-outprompt-font-color: #ff8b5c;
+
+  /* Notebook */
+  --jp-notebook-select-background: var(--jp-layout-color1);
+  --jp-notebook-multiselected-color: rgba(187, 242, 255, 0.15);
+
+  /* Rendermime */
+  --jp-rendermime-error-background: rgba(255, 120, 130, 0.2);
+  --jp-rendermime-table-row-background: #003240;
+  --jp-rendermime-table-row-hover-background: rgba(187, 242, 255, 0.12);
+  --jp-dialog-background: rgba(0, 10, 14, 0.6);
+
+  /* Toolbars */
+  --jp-toolbar-border-color: var(--jp-border-color2);
+  --jp-toolbar-background: var(--jp-layout-color1);
+  --jp-toolbar-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.8);
+  --jp-toolbar-active-background: #005a6e;
+
+  /* Inputs */
+  --jp-input-box-shadow: inset 0 0 2px #80e6ff;
+  --jp-input-active-background: #002933;
+  --jp-input-hover-background: #003240;
+  --jp-input-background: #002933;
+  --jp-input-border-color: var(--jp-border-color1);
+  --jp-input-active-border-color: var(--jp-brand-color1);
+  --jp-input-active-box-shadow-color: rgba(187, 242, 255, 0.3);
+
+  /* Editor */
+  --jp-editor-selected-background: #005a6e;
+  --jp-editor-selected-focused-background: #00718e;
+  --jp-editor-cursor-color: #fff;
+
+  /* Syntax colors from the IDE token colors */
+  --jp-mirror-editor-keyword-color: #ebbbff;
+  --jp-mirror-editor-atom-color: #ffc58f;
+  --jp-mirror-editor-number-color: #ffc58f;
+  --jp-mirror-editor-def-color: #bbf2ff;
+  --jp-mirror-editor-variable-color: #fff;
+  --jp-mirror-editor-variable-2-color: #ff9da4;
+  --jp-mirror-editor-variable-3-color: #ffeead;
+  --jp-mirror-editor-punctuation-color: #fff;
+  --jp-mirror-editor-property-color: #ff9da4;
+  --jp-mirror-editor-operator-color: #9ff;
+  --jp-mirror-editor-comment-color: #729db7;
+  --jp-mirror-editor-string-color: #d1f1a9;
+  --jp-mirror-editor-string-2-color: #ff9da4;
+  --jp-mirror-editor-meta-color: #ebbbff;
+  --jp-mirror-editor-qualifier-color: #ffeead;
+  --jp-mirror-editor-builtin-color: #bbf2ff;
+  --jp-mirror-editor-bracket-color: #fff;
+  --jp-mirror-editor-tag-color: #ff9da4;
+  --jp-mirror-editor-attribute-color: #ff9da4;
+  --jp-mirror-editor-header-color: #d1f1a9;
+  --jp-mirror-editor-quote-color: #ffc58f;
+  --jp-mirror-editor-link-color: #ff9da4;
+  --jp-mirror-editor-error-color: #ff7882;
+  --jp-mirror-editor-hr-color: #729db7;
+
+  /* Collaborator colors, lightened for dark surfaces */
+  --jp-collaborator-color1: #ffb088;
+  --jp-collaborator-color2: #ffe580;
+  --jp-collaborator-color3: #b8f171;
+  --jp-collaborator-color4: #78ffff;
+  --jp-collaborator-color5: #80e6ff;
+  --jp-collaborator-color6: #d778ff;
+  --jp-collaborator-color7: #ff7882;
+  --jp-vega-background: #fff;
+
+  /* Search matches use amber, like the IDE find widget */
+  --jp-search-selected-match-background-color: #fbbf24;
+  --jp-search-selected-match-color: #001e26;
+  --jp-search-unselected-match-background-color: #fde68a;
+  --jp-search-unselected-match-color: #001e26;
+
+  /* Scrollbars */
+  --jp-scrollbar-background-color: #002933;
+  --jp-scrollbar-thumb-color: 64, 100, 125;
+  --jp-icon-contrast-color0: #ebbbff;
+  --jp-icon-contrast-color1: #b8f171;
+  --jp-icon-contrast-color2: #ff9da4;
+  --jp-icon-contrast-color3: #80e6ff;
+
+  /* Buttons: white text needs a darker teal than the brand cyan */
+  --jp-accept-color-normal: #00718e;
+  --jp-accept-color-hover: #005a6e;
+  --jp-accept-color-active: #004051;
+  --jp-warn-color-normal: #c0344a;
+  --jp-warn-color-hover: #a92049;
+  --jp-warn-color-active: #8a1a3c;
+  --jp-reject-color-normal: #40647d;
+  --jp-reject-color-hover: #365870;
+  --jp-reject-color-active: #2f5566;
+
+  /* File and activity icons */
+  --jp-jupyter-icon-color: var(--jp-brand-color1);
+  --jp-notebook-icon-color: var(--jp-brand-color1);
+  --jp-json-icon-color: var(--jp-brand-color1);
+  --jp-console-icon-background-color: var(--jp-brand-color1);
+  --jp-console-icon-color: #001e26;
+  --jp-terminal-icon-background-color: #d9eef3;
+  --jp-terminal-icon-color: #003240;
+  --jp-text-editor-icon-color: #d9eef3;
+  --jp-inspector-icon-color: #d9eef3;
+  --jp-switch-color: #40647d;
+  --jp-switch-cursor-color: rgba(255, 255, 255, 0.9);
+
+  /* Secondary color used by accents.css */
+  --tk-secondary-color: #ff6b35;
+  --tk-secondary-text-color: #ff8b5c;
+  --tk-on-secondary-color: #002933;
+}
+
+/*
+ * JupyterLab paints the shell, visible in the gaps between panels and behind
+ * the document tabs, with --jp-layout-color3. The IDE uses its tab strip
+ * color there.
+ */
+body[data-jp-theme-name='thinkube-notebooks-dark'],
+body[data-jp-theme-name='thinkube-notebooks-dark'] #main {
+  background: #002933;
+}
+
+/* Title and status bar: the IDE's darkest surface */
+body[data-jp-theme-name='thinkube-notebooks-dark'] #jp-top-panel,
+body[data-jp-theme-name='thinkube-notebooks-dark'] #jp-main-statusbar {
+  background: #001e26;
+}
+
+/*
+ * Selected rows use the light brand cyan as background, so their icons need
+ * dark strokes and fills instead of JupyterLab's fixed white.
+ */
+body[data-jp-theme-name='thinkube-notebooks-dark']
+  .jp-DirListing-item.jp-mod-selected
+  .jp-icon-selectable[fill],
+body[data-jp-theme-name='thinkube-notebooks-dark']
+  #jp-main-statusbar
+  .jp-mod-selected
+  .jp-icon-selectable[fill] {
+  fill: #001e26;
+}
+
+body[data-jp-theme-name='thinkube-notebooks-dark']
+  .jp-DirListing-item.jp-mod-selected
+  .jp-icon-selectable[stroke],
+body[data-jp-theme-name='thinkube-notebooks-dark']
+  #jp-main-statusbar
+  .jp-mod-selected
+  .jp-icon-selectable[stroke] {
+  stroke: #001e26;
+}

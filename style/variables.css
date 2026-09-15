@@ -228,17 +228,17 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-brand-color1: #005063; /* Primary (oklch 40% 0.12 220) */
   --jp-brand-color2: #006f87; /* Primary lighter (oklch 50% 0.10 220) */
   --jp-brand-color3: #428ba1; /* Primary light (oklch 60% 0.08 220) */
-  --jp-accent-color0: #c85d00; /* Warning dark (oklch 60% 0.17 50) */
-  --jp-accent-color1: #f57400; /* Warning (oklch 70% 0.19 50) */
-  --jp-accent-color2: #fca676; /* Warning light (oklch 80% 0.12 50) */
-  --jp-accent-color3: #ffd4bc; /* Warning lightest (oklch 90% 0.06 50) */
+  --jp-accent-color0: #c2410c; /* Secondary orange, text strength */
+  --jp-accent-color1: #ff6b35; /* Secondary orange (starship prompt) */
+  --jp-accent-color2: #ffb088; /* Secondary orange light */
+  --jp-accent-color3: #ffe3d6; /* Secondary orange lightest */
 
   /* State colors (warn, error, success, info) - Thinkube palette */
 
-  --jp-warn-color0: #c85d00; /* Warning dark (oklch 60% 0.17 50) */
-  --jp-warn-color1: #f57400; /* Warning (oklch 70% 0.19 50) */
-  --jp-warn-color2: #fca676; /* Warning light (oklch 80% 0.12 50) */
-  --jp-warn-color3: #ffd4bc; /* Warning lightest (oklch 90% 0.06 50) */
+  --jp-warn-color0: #b45309; /* Warning amber dark */
+  --jp-warn-color1: #d97706; /* Warning amber */
+  --jp-warn-color2: #fcd34d; /* Warning amber light */
+  --jp-warn-color3: #fef3c7; /* Warning amber lightest */
   --jp-error-color0: #b20011; /* Destructive dark (oklch 48% 0.20 27) */
   --jp-error-color1: #d40c1a; /* Destructive (oklch 55% 0.22 27) */
   --jp-error-color2: #e06257; /* Destructive light (oklch 65% 0.16 27) */
@@ -276,7 +276,7 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   /* A custom blend of MD grey and orange 600
    * https://meyerweb.com/eric/tools/color-blend/#546E7A:F4511E:5:hex */
-  --jp-cell-outprompt-font-color: #bf5b3d;
+  --jp-cell-outprompt-font-color: #c2410c;
 
   /* Notebook specific styles */
 
@@ -386,7 +386,7 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-text-editor-icon-color: var(--md-grey-200);
   --jp-inspector-icon-color: var(--md-grey-200);
   --jp-switch-color: var(--md-grey-400);
-  --jp-switch-true-position-color: var(--jp-brand-color1);
+  --jp-switch-true-position-color: #ff6b35;
   --jp-switch-cursor-color: rgba(0, 0, 0, 0.8);
 
   /* Vega extension styles */
@@ -396,4 +396,9 @@ all of MD as it is not optimized for dense, information rich UIs.
   /* Sidebar-related styles */
 
   --jp-sidebar-min-width: 180px;
+
+  /* Secondary color used by accents.css */
+  --tk-secondary-color: #ff6b35;
+  --tk-secondary-text-color: #c2410c;
+  --tk-on-secondary-color: #002933;
 }

@@ -27,6 +27,16 @@ const themePlugin: JupyterFrontEndPlugin<void> = {
       load: () => manager.loadCSS(style),
       unload: () => Promise.resolve(undefined)
     });
+
+    // Same stylesheet: dark.css applies while this name is on <body>.
+    manager.register({
+      name: 'thinkube-notebooks-dark',
+      displayName: 'Thinkube Notebooks Dark',
+      isLight: false,
+      themeScrollbars: true,
+      load: () => manager.loadCSS(style),
+      unload: () => Promise.resolve(undefined)
+    });
   }
 };
 

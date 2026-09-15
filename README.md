@@ -4,6 +4,19 @@
 
 Thinkube Notebooks theme
 
+## Themes
+
+- **Thinkube Notebooks**: the light theme, built on the thinkube-style light
+  palette.
+- **Thinkube Notebooks Dark**: the dark theme, built on the Thinkube Dark
+  theme of the IDE.
+
+Both use teal as primary color and the orange of the Thinkube shell prompt
+(#FF6B35) as secondary color. Warnings use amber. Select a theme in
+Settings > Theme. Both themes load the same stylesheet: `style/variables.css`
+holds the light values and `style/dark.css` replaces them while the dark
+theme is selected.
+
 ## Icons
 
 The extension replaces JupyterLab's single-color UI icons (toolbars, menus,
