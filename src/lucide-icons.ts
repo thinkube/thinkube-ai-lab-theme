@@ -4,6 +4,7 @@ import arrowDownToDot from 'lucide-static/icons/arrow-down-to-dot.svg';
 import arrowUp from 'lucide-static/icons/arrow-up.svg';
 import arrowUpFromDot from 'lucide-static/icons/arrow-up-from-dot.svg';
 import bell from 'lucide-static/icons/bell.svg';
+import blocks from 'lucide-static/icons/blocks.svg';
 import betweenHorizontalEnd from 'lucide-static/icons/between-horizontal-end.svg';
 import betweenHorizontalStart from 'lucide-static/icons/between-horizontal-start.svg';
 import brushCleaning from 'lucide-static/icons/brush-cleaning.svg';
@@ -59,7 +60,6 @@ import pause from 'lucide-static/icons/pause.svg';
 import pencil from 'lucide-static/icons/pencil.svg';
 import play from 'lucide-static/icons/play.svg';
 import plus from 'lucide-static/icons/plus.svg';
-import puzzle from 'lucide-static/icons/puzzle.svg';
 import redo2 from 'lucide-static/icons/redo-2.svg';
 import redoDot from 'lucide-static/icons/redo-dot.svg';
 import refreshCw from 'lucide-static/icons/refresh-cw.svg';
@@ -137,7 +137,7 @@ export const lucideIcons: Record<string, string> = {
   'ui-components:error': circleAlert,
   'ui-components:exceptions': zap,
   'ui-components:expand-all': chevronsUpDown,
-  'ui-components:extension': puzzle,
+  'ui-components:extension': blocks,
   'ui-components:fast-forward': fastForward,
   'ui-components:file': file,
   'ui-components:file-upload': upload,

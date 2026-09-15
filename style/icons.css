@@ -58,3 +58,12 @@
 #jp-main-statusbar .jp-mod-selected .jp-icon-selectable[stroke] {
   stroke: #fff;
 }
+
+/*
+ * Side bar tab icons are drawn at 20px. A stroke width of 2.5 on Lucide's
+ * 24-unit grid gives lines of about 2px, the weight of the same icons in the
+ * VS Code activity bar.
+ */
+.jp-SideBar .lm-TabBar-tab svg [stroke] {
+  stroke-width: 2.5;
+}
