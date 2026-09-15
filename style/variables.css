@@ -235,8 +235,8 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   /* State colors (warn, error, success, info) - Thinkube palette */
 
-  --jp-warn-color0: #b45309; /* Warning amber dark */
-  --jp-warn-color1: #d97706; /* Warning amber */
+  --jp-warn-color0: #946300; /* Warning amber dark */
+  --jp-warn-color1: #ca8a04; /* Warning amber */
   --jp-warn-color2: #fcd34d; /* Warning amber light */
   --jp-warn-color3: #fef3c7; /* Warning amber lightest */
   --jp-error-color0: #b20011; /* Destructive dark (oklch 48% 0.20 27) */
