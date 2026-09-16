@@ -210,7 +210,7 @@ body[data-jp-theme-name='thinkube-notebooks-dark'] {
   /* Secondary color used by accents.css */
   --tk-secondary-color: #ff6b35;
   --tk-secondary-text-color: #ff8b5c;
-  --tk-secondary-fill-color: #c2410c;
+  --tk-secondary-fill-color: #ff6b35;
   --tk-on-secondary-color: #fff;
 }
 

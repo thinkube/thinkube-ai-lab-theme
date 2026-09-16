@@ -401,7 +401,7 @@ all of MD as it is not optimized for dense, information rich UIs.
   --tk-secondary-color: #ff6b35;
   --tk-secondary-text-color: #c2410c;
 
-  /* A fill that carries text: white reads at 5.2 on #c2410c, at 2.8 on #ff6b35. */
-  --tk-secondary-fill-color: #c2410c;
+  /* The fill under text: the secondary orange, with white on it. */
+  --tk-secondary-fill-color: #ff6b35;
   --tk-on-secondary-color: #fff;
 }

@@ -2,6 +2,10 @@
 
 <!-- <START NEW CHANGELOG ENTRY> -->
 
+## 0.1.1
+
+- The unread notification count is the secondary orange with white text.
+
 ## 0.1.0
 
 Versions restart at 0.1.0: every Thinkube extension stays on 0.1.x and
