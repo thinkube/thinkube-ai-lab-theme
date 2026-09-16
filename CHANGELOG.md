@@ -2,6 +2,15 @@
 
 <!-- <START NEW CHANGELOG ENTRY> -->
 
+## 0.1.0
+
+Versions restart at 0.1.0: every Thinkube extension stays on 0.1.x and
+moves by patch bumps. The entries below used the earlier numbering.
+
+- The unread notification count uses the darker orange with white text;
+  white on the bright orange reads at 2.8, on this one at 5.2. Lines
+  keep the bright orange.
+
 ## 0.3.0
 
 - New theme: Thinkube Notebooks Dark. Its surfaces, text and syntax colors

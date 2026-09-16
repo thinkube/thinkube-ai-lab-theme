@@ -21,7 +21,7 @@
 
 /* Notification count while notifications are unread */
 .jp-Notification-Status.jp-mod-selected {
-  background-color: var(--tk-secondary-color);
+  background-color: var(--tk-secondary-fill-color);
 }
 
 .jp-Notification-Status.jp-mod-selected .jp-Notification-Status-Text {

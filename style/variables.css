@@ -400,5 +400,8 @@ all of MD as it is not optimized for dense, information rich UIs.
   /* Secondary color used by accents.css */
   --tk-secondary-color: #ff6b35;
   --tk-secondary-text-color: #c2410c;
-  --tk-on-secondary-color: #002933;
+
+  /* A fill that carries text: white reads at 5.2 on #c2410c, at 2.8 on #ff6b35. */
+  --tk-secondary-fill-color: #c2410c;
+  --tk-on-secondary-color: #fff;
 }
